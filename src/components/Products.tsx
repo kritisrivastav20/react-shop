@@ -11,6 +11,7 @@ function Products({ products, setCart }: ProductProps) {
     let ENDPOINT = "wss://test.ejam.com";
     const socket = socketIOClient(ENDPOINT, {
       withCredentials: true,
+
       extraHeaders: {
         applicantAuth: "cV874bxX9TmbBp2H8vsZkFaZ",
       },
